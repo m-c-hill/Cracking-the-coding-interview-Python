@@ -16,7 +16,7 @@ def is_unique_algorithmic(string: str) -> bool:
     if len(string) > 128:
         return False
 
-    unicode_chars_in_string = [False]*128
+    unicode_chars_in_string = [False] * 128
     for char in string:
         char_unicode = ord(char)
         if unicode_chars_in_string[char_unicode]:
